@@ -90,15 +90,28 @@ class EmojiTableViewController: UITableViewController {
         return cell
     }
     
-    // 確保表格處於編輯模式
+    // 確保表格處於編輯模式（移動單元格（row））
+    // -Paramaters: sourceIndexPath：被移動單元格的原始位置。
+    // destinationIndexPath：用戶希望移動到的新位置。
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         // 從 data source 中移除被移動的單元格的數據。
         let movedEmoji = emojis.remove(at: sourceIndexPath.row)
         // 將剛剛移除的單元格數據插入到新的位置。
         emojis.insert(movedEmoji, at: destinationIndexPath.row)
     }
-
     
+    // 支援編輯表格視圖
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        // 設置為delete
+        if editingStyle == .delete {
+            // 從data source 中刪除行
+            emojis.remove(at: indexPath.row)
+            // 從表格視圖中刪除行，並帶有淡入淡出的動畫效果
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // 這個部分不會被執行，因為沒有允許插入操作。
+        }
+    }
 
     // MARK: - Table view delegate
     
@@ -116,7 +129,6 @@ class EmojiTableViewController: UITableViewController {
         // 禁用刪除功能
         return .none
     }
-    
     
     /*
     // MARK: - Navigation
