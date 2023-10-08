@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		93D9BED12AD1913F00B813CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9BED02AD1913F00B813CE /* AppDelegate.swift */; };
 		93D9BED32AD1913F00B813CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9BED22AD1913F00B813CE /* SceneDelegate.swift */; };
-		93D9BED52AD1913F00B813CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9BED42AD1913F00B813CE /* ViewController.swift */; };
 		93D9BED82AD1913F00B813CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D9BED62AD1913F00B813CE /* Main.storyboard */; };
 		93D9BEDA2AD1914100B813CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D9BED92AD1914100B813CE /* Assets.xcassets */; };
 		93D9BEDD2AD1914100B813CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D9BEDB2AD1914100B813CE /* LaunchScreen.storyboard */; };
+		93D9BEE52AD1919F00B813CE /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9BEE42AD1919F00B813CE /* Emoji.swift */; };
+		93D9BEE72AD1966000B813CE /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9BEE62AD1966000B813CE /* EmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93D9BECD2AD1913F00B813CE /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D9BED02AD1913F00B813CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D9BED22AD1913F00B813CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93D9BED42AD1913F00B813CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93D9BED72AD1913F00B813CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93D9BED92AD1914100B813CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93D9BEDC2AD1914100B813CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93D9BEDE2AD1914100B813CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D9BEE42AD1919F00B813CE /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		93D9BEE62AD1966000B813CE /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				93D9BED02AD1913F00B813CE /* AppDelegate.swift */,
 				93D9BED22AD1913F00B813CE /* SceneDelegate.swift */,
-				93D9BED42AD1913F00B813CE /* ViewController.swift */,
+				93D9BEE42AD1919F00B813CE /* Emoji.swift */,
+				93D9BEE62AD1966000B813CE /* EmojiTableViewController.swift */,
 				93D9BED62AD1913F00B813CE /* Main.storyboard */,
 				93D9BED92AD1914100B813CE /* Assets.xcassets */,
 				93D9BEDB2AD1914100B813CE /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D9BED52AD1913F00B813CE /* ViewController.swift in Sources */,
+				93D9BEE72AD1966000B813CE /* EmojiTableViewController.swift in Sources */,
 				93D9BED12AD1913F00B813CE /* AppDelegate.swift in Sources */,
+				93D9BEE52AD1919F00B813CE /* Emoji.swift in Sources */,
 				93D9BED32AD1913F00B813CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
